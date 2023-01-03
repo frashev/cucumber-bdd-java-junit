@@ -1,0 +1,14 @@
+Encapsulation: wrapping up of data under a single unit! The data is protected!
+
+How? 
+- By making class attributes (or variables) private
+- By making methods as private
+
+Use getter and setter methods to access private attributes
+
+Advantages
+----------
+- Data hiding
+- Flexibility to use variable as read only or write only
+- Reusability
+

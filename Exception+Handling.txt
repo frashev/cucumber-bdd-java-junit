@@ -1,0 +1,108 @@
+Exception types
+================
+Compile time exception (checked exceptions)
+Runtime exception (unchecked exception)
+
+Ways to handle exceptions
+=========================
+Handling exception using try catch finally
+throws keyword: postpone exception
+try with resources
+user defined exception
+
+throw new Exception
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class MyClass {
+
+    public static void main (String[] args) throws Exception {
+        try {
+            throw new Exception("new exception!");
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw e;
+        }
+    }
+    
+/*    public static void main (String[] args) {
+        File file = new File("C://myFile.txt");
+        try (FileReader fr = new FileReader(file)) {
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        System.out.println("after catch");
+    }*/
+    
+/*    public static void main (String[] args) {
+        File file = new File("C://myFile.txt");
+        FileReader fr = null;
+        try {
+            fr = new FileReader(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if(fr != null){
+                    fr.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println("after catch");
+    }*/
+
+/*    public static void main (String[] args) throws FileNotFoundException {
+        File file = new File("C://myFile.txt");
+        FileReader fr = new FileReader(file);
+*//*        try {
+            FileReader fr = new FileReader(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }*//*
+        System.out.println("after catch");
+*//*        int myArray[] = {1, 2, 3};
+        System.out.println(myArray[3]);*//*
+    }*/
+}
